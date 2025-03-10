@@ -1,15 +1,20 @@
 #include "twice.h"
 
-int main() {
-  
-  letter_seen_twice("Welcome to the wonderful world of software engineering");
-  letter_seen_twice("Uncopyrightable");
+#include <iostream>
+#include <vector>
 
-  return 0;
-}
-
-// Exercise 0x00 && Exercise 0x01
+// Exercise 0x051 && Exercise 0x052
 std::string letter_seen_twice(std::string text) {
-  // Hint: You'll probably want a nested for-loop (one for the current character and one for the characters you've seen before)
+  for(int i = 0; i < text.length(); i++) {
+    char c = text[i];
+    for(int j = i + 1; j < text.length(); j++) {
+      if(c == text[j]) {
+        std::cout << "'" << c << "', found at index " << i << std::endl;
+        std::cout << "'" << c << "', found at indices [" << i << ", " << j << "]" << std::endl;
+        return std::to_string(c);
+      }
+    }
+  }
+  std::cout << "\'" + text + "\'" + " contains no duplicate letters" << std::endl;
   return "";
 }
