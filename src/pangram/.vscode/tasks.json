@@ -7,7 +7,9 @@
       "command": "g++",
       "args": [
         "-g",
+        "-std=c++11",
         "${workspaceFolder}/pangram.cpp",
+        "${workspaceFolder}/main.cpp",
         "-o",
         "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
       ],
