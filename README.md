@@ -51,11 +51,11 @@ Your task is to guess whether the next card is higher og lower
 Type 'h' for higher, 'l' for lower, anything else to exit
 Your first card is: 4 of Diamonds
 Choose higher(h) or lower(l): h
-You Won, the random generated card were Jack of Hearts
+You won, the generated card were Jack of Hearts
 Choose higher(h) or lower(l): l
-You Lost, the random generated card were Jack of Clubs
+You lost, the generated card were Jack of Clubs
 Choose higher(h) or lower(l): h
-You lost, the random generated card were 6 of Diamonds
+You lost, the generated card were 6 of Diamonds
 Choose higher(h) or lower(l): q
 $
 ```
