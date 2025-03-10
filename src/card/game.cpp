@@ -30,12 +30,12 @@ int main() {
 			suit_generated = random_suit();
 			if (hl == 'h') {
 				const bool user_higher = compare_cards(rank_generated, suit_generated, rank_user_challenge, suit_user_challenge);
-				cout << "You " << (user_higher ? "Won" : "lost");
+				cout << "You " << (user_higher ? "won" : "lost");
 			} else {
 				const bool game_higher = compare_cards(rank_user_challenge, suit_user_challenge, rank_generated, suit_generated);
-				cout << "You " << (game_higher ? "Won" : "Lost");
+				cout << "You " << (game_higher ? "won" : "lost");
 			}
-			print(", the next card is", rank_generated, suit_generated);
+			print(", the generated card were", rank_generated, suit_generated);
       cout << endl << endl;
 
 			rank_user_challenge = rank_generated;
